@@ -1,0 +1,41 @@
+# Print a diamond pattern in Python
+n=int(input())
+n=(n+1)//2
+# Printing upper traingle
+i=1
+while (i<=n):
+    spaces=1
+    while(spaces<=n-i):
+        print(' ',end='')
+        spaces=spaces+1  
+    stars=1 
+    while(stars<=i):
+        print('*', end='')
+        stars=stars+1
+    p=i-1
+    while (p>=1):
+        print('*', end='')
+        p=p-1
+    i=i+1
+    print()  
+# Printing Lower triangle    
+i=1
+while (i<=n):
+    spaces=1 
+    while(spaces<=i):
+        print(' ', end='')
+        spaces=spaces+1
+    stars=1
+    while(stars<=n-i):
+        print('*',end='')
+        stars=stars+1  
+    spaces=1
+    while(spaces<=n-i-1):
+        print('*',end='')
+        spaces=spaces+1  
+    stars=1 
+    while(stars<=i):
+        print(' ', end='')
+        stars=stars+1    
+    i=i+1
+    print()  
